@@ -39,7 +39,7 @@
 #include <zlib.h>
 #endif
 
-#if defined(__APPLE__) || defined(LINUX)
+#if defined(__APPLE__) || defined(LINUX) || defined(__EMSCRIPTEN__)
 #define _read read
 #define _write write
 #define _close close
