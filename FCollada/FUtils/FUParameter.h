@@ -167,7 +167,7 @@ typedef fm::vector<fstring, false> FUParameterFStringList; /**< A Unicode string
 /** See above. */
 #define InitializeParameter(parameterName, ...) parameterName(__VA_ARGS__)
 
-#if defined(__APPLE__) || defined(LINUX)
+#if defined(__APPLE__) || defined(LINUX) || defined(__EMSCRIPTEN__)
 #include "FUtils/FUParameter.hpp"
 #endif // __APPLE__
 

@@ -18,7 +18,7 @@
 FUDebug::FUDebug() {}
 FUDebug::~FUDebug() {}
 
-#if defined(LINUX) || defined(__APPLE__)
+#if defined(LINUX) || defined(__APPLE__) || defined(__EMSCRIPTEN__)
 #if defined(UNICODE)
 #define STRING_OUT(sz) fprintf(stderr, TO_STRING(sz).c_str()); fflush(stderr);
 #else

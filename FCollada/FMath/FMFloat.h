@@ -14,7 +14,7 @@
 #ifndef _FM_FLOAT_H_
 #define _FM_FLOAT_H_
 
-#if !defined(_INC_FLOAT) && (defined (WIN32) || defined (LINUX) || defined(__APPLE__))
+#if !defined(_INC_FLOAT) && (defined (WIN32) || defined (LINUX) || defined(__APPLE__) || defined(__EMSCRIPTEN__))
 #include <float.h>
 #endif // _INC_FLOAT, WIN32 and LINUX
 
